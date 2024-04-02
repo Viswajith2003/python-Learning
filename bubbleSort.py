@@ -21,4 +21,4 @@ for i in range(n):
 print("Array is sorted in %d swaps." % (numSwap))
 print("First Element: %d" % (arr[0]))
 print("Last Element: %d" % (arr[n - 1]))
-print("The Sorted array is: %d"%(arr(i)))
+print("The Sorted array is: ", arr)
