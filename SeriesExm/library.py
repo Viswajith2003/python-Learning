@@ -73,3 +73,41 @@ class Member:
 
     def return_book(self, book):
         self.checked_out_books.remove(book)
+
+    def __str__(self):
+        checked_out_books_str = "\n".join([f"- {book.title}" for book in self.checked_out_books])
+        return f"Member ID: {self.member_id}, Name: {self.name}\nChecked-out books:\n{checked_out_books_str}"
+
+
+# Demo Section
+if __name__ == "__main__":
+    # Create books
+    book1 = Book("Book 1", "Author 1", "123456")
+    book2 = Book("Book 2", "Author 2", "234567")
+    book3 = Book("Book 3", "Author 3", "345678")
+
+    # Create members
+    member1 = Member(1, "Amar")
+    member2 = Member(2, "Athul")    
+
+    # Create a library
+    library = Library("My Library")
+
+    # Add books and members to the library
+    library.add_book(book1)
+    library.add_book(book2)
+    library.add_book(book3)
+    library.add_member(member1)
+    library.add_member(member2)
+
+    # Checkout books
+    library.checkout_book("123456", 1)  # John checks out Book 1
+    library.checkout_book("234567", 2)  # Alice checks out Book 2
+
+    # Return books
+    library.return_book("123456", 1)  # John returns Book 1
+
+    # Display library status
+    print(library)  # This should show the current state of the library
+
+        

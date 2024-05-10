@@ -5,8 +5,8 @@ class Time:
         self.seconds = seconds
         self.normalize()  # Normalize time to ensure valid values
 
-    def __str__(self):
-        return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"  # Format time as HH:MM:SS
+    def __str__(self):# Format time as HH:MM:SS
+        return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"  
 
     def normalize(self):
         # Normalize seconds to ensure they don't exceed 59
