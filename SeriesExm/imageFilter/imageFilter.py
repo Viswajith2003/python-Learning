@@ -32,7 +32,7 @@ def crop_image(image_path, bbox, output_path):
 
 # Main function to demonstrate the image operations
 def main():
-    image_path = "/home/tufa15/Documents/PYTHON_pgms/SeriesExm/imageFilter/images/nature.jpg"  # Path to the input image
+    image_path = "/home/tufa15/Documents/PYTHON_pgms/SeriesExm/imageFilter/images/inputImg.jpg"  # Path to the input image
 
     # Resize the image
     resize_image(image_path, 300, 200, "resized_image.jpg")
