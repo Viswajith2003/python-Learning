@@ -1,11 +1,13 @@
 #sum of odd and even numbers
 
 def sum_odd_even(n):
+  sum=0
   n=int(n)
   for i in range(n):
-    print(i)
+    sum=sum+i
+  return(sum)
 
 
 
 num=int(input("Enter the number: "))
-sum_odd_even(num)
+print(sum_odd_even(num))
