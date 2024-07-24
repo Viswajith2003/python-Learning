@@ -7,9 +7,9 @@ def sum_of_digits(n):
       sum=sum+cube
       n=n//10
     if org==sum:
-        return 1
+        return "yes"
     else:
-        return 0
+        return "no"
     # return sum
 
 
