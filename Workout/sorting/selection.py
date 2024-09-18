@@ -1,12 +1,11 @@
 def selectionSort(n):
     for i in range(len(n)):
-        curr_min=i
+        cur_var=i
         for j in range(i+1,len(n)):
-            if n[curr_min]>n[j]:
-                curr_min=j
-        n[i],n[curr_min]=n[curr_min],n[i]
+            if n[cur_var]>n[j]:
+                cur_var=j
+        n[i],n[cur_var]=n[cur_var],n[i]
 
-
-arr=[5,3,4,2,6,1]
+arr=[5,3,2,6,4,1]
 selectionSort(arr)
 print(arr)
