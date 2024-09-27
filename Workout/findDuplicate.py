@@ -6,13 +6,11 @@
 # Explanation: 2 and 3 occur more than once in the given array.
 
 def duplicate(arr):
-    for i in range(0,len(arr)-1):
-        for j in range(i+1,len(arr)-1):
-            if arr[i]==arr[j]:
-                dupli=arr[i]
-                return dupli
-            else:
-                return -1
+    new=[]
+    for i in arr:
+        if i in new:
+            
+        
     
 arr=[2,3,1,2,3]
 print(duplicate(arr))
