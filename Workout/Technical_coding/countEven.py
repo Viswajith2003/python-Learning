@@ -1,13 +1,62 @@
+n=int(input("Enter the number:"))
 num=[]
 count=0
-n=int(input("Enter the limit: "))
-for i in range(0,n+1):
+for i in range(n+1):
     if i%2==0:
         num.append(i)
-        count=count+1
+        count+=1
+print(num)
+print("The count is:",count)
 
-print("The list are: ",num)
-print("No of Elements: ",count)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# num=[]
+# count=0
+# n=int(input("Enter the limit: "))
+# for i in range(0,n+1):
+#     if i%2==0:
+#         num.append(i)
+#         count=count+1
+
+# print("The list are: ",num)
+# print("No of Elements: ",count)
     
         
         
