@@ -5,17 +5,39 @@
 # Output: 2 3 
 # Explanation: 2 and 3 occur more than once in the given array.
 
-def duplicate(arr):
-    l=[]
+
+# n=int(input("Enter the element:"))
+def findDupli(arr):
+    dupli=[]
     for i in range(len(arr)):
         for j in range(i+1,len(arr)):
             if arr[i]==arr[j]:
-                l.append(arr[i])
-    if not l:
+                dupli.append(arr[i])
+    if not dupli:
         return -1
     else:
-        return l
+        return dupli
+        
             
-    
-arr=[2,3,1,2,3]
-print(duplicate(arr))
+arr=[2,3,1,3,4,2]
+print(findDupli(arr))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
