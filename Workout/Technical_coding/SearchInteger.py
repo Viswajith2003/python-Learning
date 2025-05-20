@@ -8,7 +8,7 @@ def srchElem(arr,n):
     for i in range(len(arr)):
         if arr[i]==n:
             return i
-        
+    return -1  
 
 
 arr=[0,1,2,4,6]
@@ -17,7 +17,7 @@ index=srchElem(arr,n)
 if index != -1:
     print(f"{n} is found at index {index}");
 else:
-    print("element not found")
+    print(f"{n} is not found");
 
 
 
